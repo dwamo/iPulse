@@ -1,0 +1,24 @@
+development:
+  adapter: postgresql
+  host: <%= ENV['DATABASE_HOST'] %>
+  port: <%= ENV['DATABASE_PORT'] %>
+  database: <%= ENV['DATABASE_NAME'] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  pool: 5
+  timeout: 50
+# test:
+#   adapter: postgresql
+#   database: addressbook_isaac
+#   username: isaac
+#   password: isaactest123
+#   host: localhost
+#   port: 4044
+#   pool: 10
+
+# production:
+#   adapter: postgresql
+#   database: myapp_production
+#   username: <%= ENV['DB_USERNAME'] %>
+#   password: <%= ENV['DB_PASSWORD'] %>
+#   host: <%= ENV['DB_HOST'] %>
